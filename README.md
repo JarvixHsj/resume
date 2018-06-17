@@ -22,7 +22,7 @@
 ---
 
 # 生活照片
-![Mou icon](http://www.zhanshengpipidi.cn/media/img_post/P70111-2307411.jpg)
+![Mou icon](http://www.zhanshengpipidi.cn/media/img_post/P70111-2307411.jpg =200x300)
 
 
 # 在校外包经历
