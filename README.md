@@ -22,7 +22,7 @@
 ---
 
 # 生活照片
-![Mou icon](https://raw.githubusercontent.com/xiantang/resume/master/P70111-230741(1).jpg)
+![Mou icon](https://raw.githubusercontent.com/xiantang/resume/master/P70111-230741(1).jpg =200x300)
 
 
 # 在校外包经历
