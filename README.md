@@ -22,7 +22,7 @@
 ---
 
 # 生活照片
-![Mou icon](http://www.zhanshengpipidi.cn/media/img_post/P70111-2307411.jpg =200x300)
+![Mou icon](https://raw.githubusercontent.com/xiantang/resume/master/P70111-230741(1).jpg)
 
 
 # 在校外包经历
