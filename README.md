@@ -83,8 +83,12 @@
 ## 2018.07-2018.09 我和我们文化传播  
 * 简介:
     * 负责豆瓣全站电影数据增量采集
-
-
+* 技术细节:
+    * 使用芝麻代理并编写代理池，解决豆瓣IP封禁。
+    * 优化爬虫架构，将评论爬取和详细页面爬取模块解藕。
+* 总结:
+    * 爬取`7w`电影数据，以及`500w`电影评价。
+    * 使用`aiohttp`以多进程的方式编写爬虫框架，增量爬取时间从`7`天降低到`3`天。
 
 
 
@@ -101,13 +105,13 @@
 以下均为我熟练使用的技能
 
 - Web开发：Java/Python
-- 数据采集：scrapy/selenium/requests/urllib
 - 后端框架：Spring Boot/Django/ssm
+- 项目构建：maven
+- ORM框架：mybatis
 - 前端框架：Bootstrap
 - 数据库相关：Mysql/Redis/sqlserver
-- ORM框架：mybatis
-- 项目构建：maven
 - 版本管理、文档和自动化部署工具：git
+- 数据采集：scrapy/selenium/requests/urllib
 - 运维: linux(terminal),docker
 
 # 我的优势
@@ -118,6 +122,7 @@
 * 具有自我驱动能力，由于有较扎实的CS基础，学习语言和新技术较快，遇到问题会先思考再通过`Stack Overflow`/`Google`来解决问题。
 ## 代码之外
 * 喜欢健身，在钻研技术的同时保持良好的体魄。
+* 热爱阅读，喜欢阅读经典的技术大部头来提升水准。
 
 
 ---
