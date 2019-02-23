@@ -30,7 +30,7 @@
 * 技术细节:
     * 调用聚合数据的短信api发送短信，使用Redis对用户手机验证码进行为期`60s`的缓存。
     * 利用MongoDB的地理位置索引`2dsphere`,对球面上附近地点的单车进行查询，实现在加载地图和移动地图的时候，加载附近的单车。
-* Github:[bike](https://github.com/xiantang/bike)
+* Github:[共享单车微信小程序](https://github.com/xiantang/bike)
 
 ### Android仿知乎日报
 * 简介:
@@ -43,15 +43,28 @@
     * 使用`fiddler`确定知乎日报接口。
     * 使用`jsoup`对知乎接口返回的`HTML`进行裁剪。
     * 使用开源的`RecyclerView`代替原生的`ListView`，利用`volley`异步请求库，进行数据获取。
-
+* Github:[Android仿知乎日报](https://github.com/wzbcCoder/ZhiHuDaily)
 ## Python项目
 ### 个人技术博客
-使用django+bootstarp搭建的个人博客，在这个项目中我遇到的最大的问题是对django的view 和 model没有理解，导致项目停滞了一段时间，在对数据库和orm有了一定了解后一步一步看着django的文档完成了项目，在这个项目中我最满意的是博文支持Markdown语法，能够写出图文结合的博客，使读者在阅读博客的时候能够产生较好的阅读体验。这个博客对我意义很大，每当我对某些技术有新的见解的时候，我都会打开我的网站写上一篇文章，现在我的技术博客已经有40篇技术文章了，并且不断在更新。
+* 简介：
+    * 使用django+bootstarp搭建的个人博客。
+* 技术细节：
+    * 前端使用`edit.js`库，提升用户的写博文时的体验，后端使用`markdown`库，将`Markdown`文档渲染为`HTML`进行展示。
+* Github:[个人技术博客](https://github.com/xiantang/myblog)
 
 
 
-### 京东商品爬虫
-基于scrapy-redis 使用代理服务器池提供代理进行爬取，在这个项目中最让我疑惑的是scrapy-redis是如何实现多台机子共同爬取，和朋友一起研究源码并探讨后得出，scrapy-redis重写了scrapy的调度和队列，将爬取队列存在了redis中的request中，各台机器都通过连接redis取出request并下载，我们还发现scrapy-redis去重手段十分有趣，采用哈希散列的方法将参数位置不同的url生成相同的哈希地址。这个项目最让我满意的是在并发开启为10的情况下每天能够有10w+条商品60w+评论入库。 
+### 京东全站商品爬虫
+* 简介：
+    * 基于scrapy-redis的京东全站增量爬虫。
+* 技术细节:
+    * 重构爬虫的`pipeline`,使用**有限状态机**省去了繁杂的`if-else`代码。
+    * 通过阅读和修改`scrapy-redis`源码，将原来基于`redis` `set`的去重对列，改为基于布隆过滤器的实现，提高了去重的效率。
+    * 使用`scrapyd`的api编写脚本控制爬虫的状态，达到增量爬取的效果。
+    * 使用`docker` 进行爬虫的批量部署。
+* 总结:
+    * 爬虫部署在三台`ubuntu`云服器上，并稳定爬取。
+    * 只需三天就可以完成对京东的`1100w`商品数据的价格监控，每日能够记录`3W+`条价格更新。
 
 # 在校外包经历
 
@@ -67,9 +80,10 @@
     * 原定在30天的采集计划于7天内完成。
 
 #  工作以及开发经历
-## 2018.07-2018.09 我和我们文化传播
-* 负责豆瓣全站的数据增量采集
-
+## 2018.07-2018.09 我和我们文化传播  
+* 简介:
+    * 负责豆瓣全站电影数据增量采集
+    
 
 
 
@@ -87,12 +101,23 @@
 以下均为我熟练使用的技能
 
 - Web开发：Java/Python
-- 数据采集: scrapy/selenium/requests/urllib
-- Web框架：Spring Boot/Django
-- 前端框架：Bootstrap/HTML5
+- 数据采集：scrapy/selenium/requests/urllib
+- 后端框架：Spring Boot/Django/ssm
+- 前端框架：Bootstrap
 - 数据库相关：Mysql/redis(了解)/sqlserver
-- ORM框架：mybatis/
+- ORM框架：mybatis
+- 项目构建：maven
 - 版本管理、文档和自动化部署工具：git
+- 运维: linux(terminal),docker
+
+# 我的优势
+## 代码之内
+* 热爱开源，Github 2018年贡献`990+` Commits。
+* 喜欢总结, [个人博客](zhanshengpipidi.cn)拥有博文40余篇，方向包括但不限于`machine-learning`，`算法`，`Linux`。
+* 有刷题的喜欢,在`leetcode`上`Accepted`的题目 150+ 。
+* 具有自我驱动能力，由于有较扎实的CS基础，学习语言和新技术较快，遇到问题会先思考再通过`Stack Overflow`/`Google`来解决问题。
+## 代码之外
+* 喜欢健身，在钻研技术的同时保持良好的体魄。
 
 
 ---
