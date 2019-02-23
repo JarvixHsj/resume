@@ -112,11 +112,13 @@
 - 运维： linux(terminal)，docker
 
 # 我的优势
+
 ## 代码之内
 * 热爱开源，Github 2018年 贡献` 990+ ` Commits。
 * 喜欢总结， [个人博客](zhanshengpipidi.cn)拥有博文 40 余篇，方向包括但不限于`machine-learning`，`算法`，`Linux`。
 * 有刷题的习惯，在`leetcode`上`Accepted`的题目 150+ 。
-* 具有自我驱动能力，由于有较扎实的CS基础，学习语言和新技术较快，遇到问题会先思考再通过`Stack Overflow`/`Google`来解决问题。
+* 具有自我驱动能力，由于有较扎实的CS基础，学习语言和新技术较快，遇到问题会先思考再通过`Stack Overflow`/`Google`来解决问题。   
+
 ## 代码之外
 * 喜欢健身，在钻研技术的同时保持良好的体魄。
 * 热爱阅读，喜欢阅读经典的技术大部头来提升水准。
