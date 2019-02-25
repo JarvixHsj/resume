@@ -10,7 +10,7 @@
 
  - 朱静迪/男/1998
  - 本科：温州大学城市学院计算机系 
- - 技术博客：http://www.zhanshengpipidi.cn
+ - 技术博客：http://xiantang.info
  - Github：https://github.com/xiantang
  - 期望职位：Java后端实习生/数据采集实习生 
  - 期望城市：杭州/上海
