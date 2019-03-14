@@ -90,7 +90,7 @@
 以下均为我熟练使用的技能
 
 - Web开发：Java/Python
-- 后端框架：Spring Boot/Django/ssm
+- 后端框架：Spring Boot/Django/SSM
 - 项目构建：maven
 - ORM框架：mybatis
 - 前端框架：Bootstrap
