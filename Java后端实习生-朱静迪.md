@@ -3,7 +3,7 @@
 - 手机：15868759135 
 - Email：zhujingdi1998@gmail.com
 - QQ/微信号：986494553/b986494553
-
+- Github: [xiantang](https://github.com/xiantang)
 ---
 
 # 个人信息
@@ -18,7 +18,18 @@
 ---
 
 # 开源项目和作品
+![](http://ww1.sinaimg.cn/large/006d4JA0ly1g28u4xp5n3j30kl07g74o.jpg)
+
 ## Java项目
+
+### NIO WebServer
+* 简介:
+    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlt 容器。
+* 技术细节:
+    * 完成了对HTTP协议的部分支持，解析POST GET 请求并且封装为自定义的 request 对象解析 url 返回对应的servlet 并封装为 response，写入浏览器。
+    * 使用NIO Reactor 模型实现复用socket连接，并且通过反注册实现 keep-alive 长连接。
+* 总结:
+    * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `556` 个请求/sec。
 
 ### 京东全站商品监控系统
 * 简介：
@@ -34,13 +45,6 @@
     * 爬虫部署在三台 `Ubuntu` 云服器上，并稳定爬取。
     * 只需三天就可以完成对京东的 `1100w` 商品数据的价格监控，每日能够记录 `3W+` 条价格更新。
 
-### 共享单车微信小程序
-* 简介：
-    * 基于`Spring Boot`和腾讯地图的共享单车小程序。
-* 技术细节：
-    * 调用聚合数据的短信 api 发送短信，使用 `Redis` 对用户手机验证码进行为期 `60s` 的缓存。
-    * 利用 `MongoDB` 的地理位置索引 `2dsphere` ，对球面上附近地点的单车进行查询，实现在加载地图和移动地图的时候，加载附近的单车。
-* Github：[共享单车微信小程序](https://github.com/xiantang/bike)
 
 #  工作以及开发经历
 ## 2018.07-2018.09 我和我们文化传播  
