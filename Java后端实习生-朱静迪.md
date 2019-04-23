@@ -24,7 +24,7 @@
 
 ### NIO WebServer
 * 简介:
-    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlt 容器。
+    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器。
 * 技术细节:
     * 完成了对HTTP协议的部分支持，解析POST GET 请求并且封装为自定义的 request 对象解析 url 返回对应的servlet 并封装为 response，写入浏览器。
     * 使用NIO Reactor 模型实现复用socket连接，并且通过反注册实现 keep-alive 长连接。
