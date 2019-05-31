@@ -18,7 +18,7 @@
 ---
 
 # 开源项目和作品
-![](http://ww1.sinaimg.cn/large/006d4JA0ly1g28u4xp5n3j30kl07g74o.jpg)
+![](http://ww1.sinaimg.cn/large/006d4JA0ly1g3kt7hei6xj30lh05it8w.jpg)
 
 ## Java项目
 
