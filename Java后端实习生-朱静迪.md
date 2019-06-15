@@ -18,7 +18,7 @@
 ---
 
 # 开源项目和作品
-![](http://ww1.sinaimg.cn/large/006d4JA0ly1g28u4xp5n3j30kl07g74o.jpg)
+![](http://ww1.sinaimg.cn/large/006d4JA0ly1g3kt7hei6xj30lh05it8w.jpg)
 
 ## Java项目
 
@@ -31,7 +31,7 @@
     * 实现 Context 容器以及 Wrapper 容器，并使用 Pipeline 机制使开发者能够对 HttpRequest 对象进行一系列逻辑操作。
     * 对于 NIO 中的 selector 的注册行为，使用并发注册与非阻塞轮询的方式提高性能，相较于串行方式提高了 `10%` 的吞吐量。
 * 总结:
-    * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `556` 个请求/sec。
+    * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `630` 个请求/sec。
 
 ### 京东全站商品监控系统
 * 简介：
