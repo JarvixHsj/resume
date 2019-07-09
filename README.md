@@ -12,7 +12,6 @@
  - 本科：温州大学城市学院 2016/6 - 至今(大三)
  - 专业：计算科学与技术专业
  - 技术博客：http://xiantang.info
- - Github：https://github.com/xiantang
  - 期望职位：Java后端工程师/数据采集工程师
  - 期望城市：杭州/上海
 
@@ -23,14 +22,15 @@
 
 ## Java项目
 
-### NIO WebServer
+### NIO WebServer(轮子)
 * 简介:
-    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器。
+    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器，并实现 **热加载** 功能。
 * 技术细节:
     * 完成了对 HTTP 协议的部分支持，解析 POST GET 请求并且封装为自定义的 request 对象解析 url 返回对应的servlet 并封装为 HttpResponse，写入浏览器。
     * 使用 NIO Reactor 模型实现复用 socket 连接，并且通过反注册实现 keep-alive 长连接。
     * 实现 Context 容器以及 Wrapper 容器，并使用 Pipeline 机制使开发者能够对 HttpRequest 对象进行一系列逻辑操作。
     * 对于 NIO 中的 selector 的注册行为，使用并发注册与非阻塞轮询的方式提高性能，相较于串行方式提高了 `10%` 的吞吐量。
+    * 使用自定义类加载器重新装载 class 文件实现热加载机制。
 * 总结:
     * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `630` 个请求/sec。
 
@@ -40,7 +40,6 @@
 * 技术细节：
     * 使用 `RabbitMQ` 作为消息队列，通过 `Quartz` 定时扫描数据库，发送邮件提醒用户价格更新。提高性能用redis进行缓存减少数据库访问压力。
     * 使用`Redis`作为缓存数据库，加快了 `50%` 的加载速度。
-    * 实现`Spring-anti-spider`插件，为恶意采集设置三个等级，分别是限制接口每分钟调用次数，检查 `UserAgent` ，用户IP封禁，并运用到项目中。
     * 重构爬虫的 `pipeline` ，使用**有限状态机**省去了繁杂的 `if-else` 代码。通过阅读和修改 `scrapy-redis` 源码，将原来基于 `Redis` `set` 的去重对列，改为基于布隆过滤器的实现，提高了去重的效率。
     * 使用 `scrapyd` 的api编写脚本控制爬虫的状态，达到增量爬取的效果。
     * 使用 `docker` 进行爬虫的批量部署。

@@ -22,14 +22,15 @@
 
 ## Java项目
 
-### NIO WebServer
+### NIO WebServer(轮子)
 * 简介:
-    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器。
+    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器，并实现 **热加载** 功能。
 * 技术细节:
     * 完成了对 HTTP 协议的部分支持，解析 POST GET 请求并且封装为自定义的 request 对象解析 url 返回对应的servlet 并封装为 HttpResponse，写入浏览器。
     * 使用 NIO Reactor 模型实现复用 socket 连接，并且通过反注册实现 keep-alive 长连接。
     * 实现 Context 容器以及 Wrapper 容器，并使用 Pipeline 机制使开发者能够对 HttpRequest 对象进行一系列逻辑操作。
     * 对于 NIO 中的 selector 的注册行为，使用并发注册与非阻塞轮询的方式提高性能，相较于串行方式提高了 `10%` 的吞吐量。
+    * 使用自定义类加载器重新装载 class 文件实现热加载机制。
 * 总结:
     * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `630` 个请求/sec。
 
