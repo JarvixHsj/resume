@@ -8,28 +8,30 @@
  - 朱静迪/男/1998
  - 本科：温州大学城市学院 2016/9 - 2020/6
  - 专业：计算科学与技术专业
- - 技术博客：http://xiantang.info
+ - 技术博客：[咸糖的博客](http://xiantang.info)
  - 期望职位：Java后端工程师/测试开发工程师
  - 期望城市：杭州/上海
 
 ---
 
 # 联系方式
+
+
 <p style="position:absolute;left:70%">
     <img src="https://github.com/xiantang/resume/blob/master/image/a32c252efda587d2062785de59b78a6.jpg?raw=true" alt="Sample"  width="100" height="100">
 </p>
 
 
 - 手机：15868759135 
-- Email：zhujingdi1998@gmail.com
 - 微信号：b986494553
+- Email：zhujingdi1998@gmail.com
 - Github: [xiantang](https://github.com/xiantang)
-
+- Twitter: [xiantang98](https://twitter.com/xiantang98)
 
 ---
 
 
-#  工作以及开发经历
+#  工作以及项目经历
 
 ## 2019.05-至今 北京爱奇艺科技有限公司上海分公司(基础架构部)
 * 简介:
@@ -39,13 +41,11 @@
     * 将项目中部分串行的操作，使用线程池并发完成，提高了接口至少 `50%` 的查询速度。
     * 积极参与项目中的 `code review` 环节。
 
-# 开源项目和作品
 <p align="left">
     <img src="https://i.loli.ma/pic/e43d059f917e888605efd06119001557.png" alt="Sample"  width="400" height="100">
 </p>
 
 
-## Java项目
 
 ### NIO WebServer(轮子)
 * 简介:
