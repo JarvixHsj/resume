@@ -1,5 +1,10 @@
 # 个人信息
 
+<p style="position:absolute;left:50%">
+    <img src="https://github.com/xiantang/resume/blob/master/image/40bac24aed18febfd03048389c887f5.jpg?raw=true" alt="Sample"  width="80" height="100">
+</p>
+
+
  - 朱静迪/男/1998
  - 本科：温州大学城市学院 2016/9 - 2020/6
  - 专业：计算科学与技术专业
@@ -10,13 +15,14 @@
 ---
 
 # 联系方式
+<p align="position:absolute;left:50%">
+    <img src="https://github.com/xiantang/resume/blob/master/image/a32c252efda587d2062785de59b78a6.jpg?raw=true" alt="Sample"  width="100" height="100">
+</p>
+
 
 - 手机：15868759135 
 - Email：zhujingdi1998@gmail.com
 - 微信号：b986494553
-    <p align="left">
-        <img src="https://github.com/xiantang/resume/blob/master/image/a32c252efda587d2062785de59b78a6.jpg?raw=true" alt="Sample"  width="100" height="100">
-    </p>
 - Github: [xiantang](https://github.com/xiantang)
 ---
 
