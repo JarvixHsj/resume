@@ -1,12 +1,3 @@
-# 联系方式
-
-- 手机：15868759135 
-- Email：zhujingdi1998@gmail.com
-- 微信号：b986494553
-![](/image/a32c252efda587d2062785de59b78a6.jpg=100x100)
-- Github: [xiantang](https://github.com/xiantang)
----
-
 # 个人信息
 
  - 朱静迪/男/1998
@@ -17,6 +8,18 @@
  - 期望城市：杭州/上海
 
 ---
+
+# 联系方式
+
+- 手机：15868759135 
+- Email：zhujingdi1998@gmail.com
+- 微信号：b986494553
+    <p align="left">
+        <img src="https://github.com/xiantang/resume/blob/master/image/a32c252efda587d2062785de59b78a6.jpg?raw=true" alt="Sample"  width="100" height="100">
+    </p>
+- Github: [xiantang](https://github.com/xiantang)
+---
+
 
 #  工作以及开发经历
 
@@ -29,7 +32,10 @@
     * 积极参与项目中的 `code review` 环节。
 
 # 开源项目和作品
-![](https://i.loli.ma/pic/e43d059f917e888605efd06119001557.png)
+<p align="left">
+    <img src="https://i.loli.ma/pic/e43d059f917e888605efd06119001557.png" alt="Sample"  width="400" height="100">
+</p>
+
 
 ## Java项目
 
