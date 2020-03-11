@@ -1,17 +1,10 @@
 # 个人信息
 
-<p style="position:absolute;left:70%">
-    <img src="https://github.com/xiantang/resume/blob/master/image/40bac24aed18febfd03048389c887f5.jpg?raw=true" alt="Sample"  width="80" height="100">
-</p>
-
-
  - 朱静迪/男/1998
- - 本科：温州大学城市学院 2016/9 - 2020/6
- - 专业：计算科学与技术专业
- - 技术博客：[咸糖的博客](http://xiantang.info)
- - 期望职位：Java后端工程师/测试开发工程师
- - 期望城市：杭州/上海
-
+ - 专业：**计算科学与技术专业**
+ - 期望职位：后端工程师(不限语言)/测试开发工程师
+ - 期望城市：**不限**
+ - 本科：温州商学院 2016/9 - 2020/6
 ---
 
 # 联系方式
@@ -27,59 +20,57 @@
 - Email：zhujingdi1998@gmail.com
 - Github: [xiantang](https://github.com/xiantang)
 - Twitter: [xiantang98](https://twitter.com/xiantang98)
+- Blog：[咸糖的博客](http://xiantang.info)
 
 ---
 
 
-#  工作以及项目经历
+#  工作经历
 
-## 2019.05-2019.08 北京爱奇艺科技有限公司上海分公司(基础架构部)
+## 2019.10-2020.03 Growing IO (Scala 服务端实习生)
 * 简介:
-    * 使用 Git 工作流参与QLB(QIYI Load Balance)的后端日常开发。
-* 技术细节:
+    * Growing IO 是一款支持无埋点的数据分析产品，通过集成 SDK 快速实现数据驱动，以及精细化运营。
+* 工作内容:
+    * 负责推送业务健壮性的维护，使用 `akka` 完成对推送的重试特性开发，将推送的送达率提升 `5%`。阅读 `RateLimiter` 源码，开发分布式的限流组件`RedisLimiter` 进行 `削峰` 将 `100w+` 的大用户量查询平缓化。
+    * 协助导师完成 `100w+` 用户的推送性能提升，采用 `grpc` 与 `kafka` 异步文件下载的方式，降低了数据端的压力并且提升了 `50%` 的推送速度，完成 `5 min 推送 100w 用户`的目标。
+    * 负责服务端接口封装 `API Java SDK`开发，使用 `TDD` 测试驱动开发，将测试覆盖率提升至 `80%`。
+    * 独立完成`中型模块`的需求的后端开发，编写技术文档主持评审会议，与前端测试产品充分交流，编写单元测试通过 code review 并上线。
+    * 积极参与项目中的 `code review` 环节，与组内同事互相评审代码，消灭代码中的`坏味道`。
+
+
+
+## 2019.05-2019.08 北京爱奇艺科技有限公司(基础架构部 Java 服务端实习生)
+* 简介:
+    * 使用 Git 工作流参与QLB(QIYI Load Balance)的后端日常开发与 `BUG` 修复。
+* 工作内容:
     * 负责`分布式定时任务调度功能`的开发，支持动态任务调度(反射解耦)。
     * 将项目中部分串行的操作，使用线程池并发完成，提高了接口至少 `50%` 的查询速度。
-    * 积极参与项目中的 `code review` 环节。
 
-<p align="center">
+
+# 个人项目经历
+<p align="left">
     <img src="https://i.loli.ma/pic/e43d059f917e888605efd06119001557.png" alt="Sample"  width="400" height="100">
 </p>
 
-
-
-### NIO WebServer(轮子)
+### [NIO Servlet Container](https://github.com/xiantang/JerryMouse)
 * 简介:
-    * 基于Java NIO 多线程、socket网络编程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器，并实现 **热加载** 功能。
+    * 基于Java NIO 多线程、XML 解析、log4j 日志的 HTTP 服务器和 Servlet 容器，并实现 `热加载/热部署` 功能。
 * 技术细节:
-    * 完成了对 HTTP 协议的部分支持，解析 POST GET 请求并且封装为自定义的 request 对象解析 url 返回对应的servlet 并封装为 HttpResponse，写入浏览器。
-    * 使用 NIO `Reactor` 模型实现复用 socket 连接，并且通过反注册实现 `keep-alive` 长连接。
-    * 实现 Context 容器以及 Wrapper 容器，并使用 Pipeline 机制使开发者能够对 HttpRequest 对象进行一系列逻辑操作。
-    * 对于 NIO 中的 selector 的注册行为，使用并发注册与非阻塞轮询的方式提高性能，相较于串行方式提高了 `10%` 的吞吐量。
-    * 使用`自定义类加载器`重新装载 class 文件实现热加载机制。
+    * 整个项目使用 `TDD` 测试驱动开发，代码的单元测试覆盖率在 `70%`。
+    * 阅读 paper [《Scalable IO in Java》](http://gee.cs.oswego.edu/dl/cpjslides/nio.pdf) 并构建实现`可伸缩`的高性能IO模型`Reactor`。
+    * 为了实现多 Web `服务之间的隔离`与`运行时应用的装载卸载`，编写`自定义类加载器`对用户代码进行加载。
+    * 配置 `travis-ci` 对于合并与提交的 commits 执行自动化测试。
 * 总结:
     * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `630` 个请求/sec。
 
-### 京东全站商品监控系统
-* 简介：
-    * 基于 `scrapy-redis` 和 `Spring Boot` 的分布式价格监控平台。
-* 技术细节：
-    * 使用 `RabbitMQ` 作为消息队列，通过 `Quartz` 定时扫描数据库，发送邮件提醒用户价格更新。提高性能用redis进行缓存减少数据库访问压力。
-    * 使用`Redis`作为缓存数据库，加快了 `50%` 的加载速度。
-    * 重构爬虫的 `pipeline` ，使用**有限状态机**省去了繁杂的 `if-else` 代码。通过阅读和修改 `scrapy-redis` 源码，将原来基于 `Redis` `set` 的去重对列，改为基于布隆过滤器的实现，提高了去重的效率。
-    * 使用 `scrapyd` 的api编写脚本控制爬虫的状态，达到增量爬取的效果。
-    * 使用 `docker` 进行爬虫的批量部署。
-* 总结：
-    * 爬虫部署在三台 `Ubuntu` 云服器上，并稳定爬取。
-    * 只需三天就可以完成对京东的 `1100w` 商品数据的价格监控，每日能够记录 `3W+` 条价格更新。
+## 技术栈
+* **语言**: 熟悉 Java(NIO，并发，JVM)，Scala(函数式编程)，Python(装饰器，爬虫，脚本)
+* **框架**: 熟悉 Spring 全家桶，Scrapy 了解 PlayFrameWork Slick Akka
+* **数据库**: 熟悉 Mysql Redis
+* **工具**: 熟练运用 Linux 命令行操作
+* **其他**: TDD 教徒 有代码洁癖
 
-
-## 技术文章
-
-- [爬虫遭遇状态码521陷阱 破解js加密cookie](https://zhuanlan.zhihu.com/p/40321850)  收获 73 个赞同，330 个收藏。
 
 ## 获得奖项
 * **2018第一届全国大数据竞赛二等奖**
 * **2018年学业三等奖学金**
-
-# 致谢
-感谢您花时间阅读我的简历，期待能有机会和您共事。

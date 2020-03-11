@@ -1,16 +1,10 @@
 # 个人信息
 
-<p style="position:absolute;left:70%">
-    <img src="https://github.com/xiantang/resume/blob/master/image/40bac24aed18febfd03048389c887f5.jpg?raw=true" alt="Sample"  width="80" height="100">
-</p>
-
-
  - 朱静迪/男/1998
- - 本科：温州商学院 2016/9 - 2020/6
- - 专业：计算科学与技术专业
+ - 专业：**计算科学与技术专业**
  - 期望职位：后端工程师(不限语言)/测试开发工程师
- - 期望城市：不限
-
+ - 期望城市：**不限**
+ - 本科：温州商学院 2016/9 - 2020/6
 ---
 
 # 联系方式
@@ -69,6 +63,12 @@
 * 总结:
     * 使用JMeter进行压力测试：connection:close 以下测试总请求次数都为 20000 次2个线程，每个线程循环访问10000次，吞吐量为 `630` 个请求/sec。
 
+## 技术栈
+* **语言**: 熟悉 Java(NIO，并发，JVM)，Scala(函数式编程)，Python(装饰器，爬虫，脚本)
+* **框架**: 熟悉 Spring 全家桶，Scrapy 了解 PlayFrameWork Slick Akka
+* **数据库**: 熟悉 Mysql Redis
+* **工具**: 熟练运用 Linux 命令行操作
+* **其他**: TDD 教徒 有代码洁癖
 
 
 ## 获得奖项
